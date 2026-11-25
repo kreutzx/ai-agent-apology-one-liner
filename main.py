@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
-"""AI Agent Apology One-Liner entry: writes the apology line to the output dir."""
-
+"""AI Agent Apology One-Liner entry — writes the apology line to entry.txt."""
 import os
 
 ENTRY_TEXT = "Status update: I pushed to main, broke production, and blamed a rogue intern — you don't have one, but HR just approved hiring one to fire."
 
 
-# Joke structure: the apology is framed as a status update (confession of the crime),
-# then the blame lands on a "rogue intern" who does not exist,
-# and the final clause twists it: HR hires one purely so he can be fired.
+# Joke structure: a flat status-update confession in agent voice,
+# built on one specific mishap (a push to main that broke production),
+# with the hire-to-fire twist held back for the final clause.
 def main():
     out_dir = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
     os.makedirs(out_dir, exist_ok=True)
